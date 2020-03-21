@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>SushiMan</title>
+</head>
+<body>
+
+    <header>
+        <div id="logo" onclick="slowScroll('#top')">
+            <h1><img src="img/head1.png" alt=""></h1>
+        </div>
+        <div id="about">
+            <a href="#" title="МЕНЮ" onclick="slowScroll('#main')">МЕНЮ</a>
+            <a href="#" title="ДОСТАВКА И ОПЛАТА" onclick="slowScroll('#overview')">ДОСТАВКА</a>
+            <a href="#" title="КОНТАКТЫ" onclick="slowScroll('#contacts')">КОНТАКТЫ</a>
+            <a href="#" title="ОТЗЫВЫ" onclick="slowScroll('#faq')">ОТЗЫВЫ</a>
+        </div>
+    </header>
+    <aside class="cats-container">
+        <div class="cats">
+            <div class="cat-link">
+                <a href="#">
+                    <img src="img/sushi.png" alt="">
+                    <span>Роллы</span>
+                </a>
+            </div>
+            <div class="cat-link">
+                <a href="#">
+                    <img src="img/sushi.png" alt="">
+                    <span>Cуши</span>
+                </a>
+            </div>
+            <div class="cat-link">
+                <a href="#">
+                    <img src="img/sushi.png" alt="">
+                    <span>Сеты</span>
+                </a>
+            </div>
+            <div class="cat-link">
+                <a href="#">
+                    <img src="img/sushi.png" alt="">
+                    <span>WOK</span>
+                </a>
+            </div>
+            <div class="cat-link">
+                <a href="#">
+                    <img src="img/sushi.png" alt="">
+                    <span>Напитки</span>
+                </a>
+            </div>
+        </div>
+    </aside>
+    
+
+    <div id="top">
+        <h1>Sushiman</h1>
+        <h2>Самые вкусные суши в Энергодаре</h2>
+    </div>
+        
+       
+    <!-- Test -->
+    <div id="main">
+        <div class="intro">
+            <h2>СУШИ</h2>
+            <span>НОРИ МАКИ</span>
+        </div>
+
+  
+    <footer>
+        <div class="terms">
+            <img src="/img/" alt="">
+        </div>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+         $('html, body').animate({
+            scrollTop: $(id).offset().top
+         }, 500);   
+        }
+    </script>
+</body>
+</html>
